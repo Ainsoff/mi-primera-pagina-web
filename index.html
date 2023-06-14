@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer pagina </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="container-nav">
+        <nav class="navbar" role="navigation">
+            <a href="index.html" class="brand">Mi página web</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-a">Inicio</a></li>
+                <li><a href="acerca de.html" class="nav-a">Acerca de nosotros</a></li>
+                <li><a href="servicios.html" class="nav-a">Servicios</a></li>
+                <li><a href="contactos.html" class="nav-a">Contactanos</a></li>
+            </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+    </header>
+    <main class="container">
+        <h1>Bienvenidos a mi primer Website!</h1>
+        <div class="row">
+            <section class="column">
+                <h2>Presentacion</h2>
+                <p>Soy Solorzano Lautaro, ¡y esta es mi primera página web!</p>
+                <p>Estoy aprendiendo desarrollo web para crear sitios web visualmente atrapantes y funcionales.</p>
+            </section>
+            <section class="column">
+                <h2>¿Que es lo que voy a aprender?</h2>
+                <p>A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me ayudarán a
+                    crear una base sólida en el desarrollo web front-end.</p>
+            </section>
+        </div>
+        <button onclick="showAlert()" aria-label="¡Haz clic en mí!">¡Haz clic en mí!</button>
+
+        <div class="container__videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3u04tQGsmrQ"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+
+            <video src="profe.mp4" controls></video>
+        </div>
+        <div class="container__audio">
+            <button id="button_audio" onclick="Audio()">¡Haz  doble click en mí!</button>
+            <input type="range" id="volumen" min="0" max="1" step="0.1" value="1">
+            <audio id="audio" src="dancin.m4a" preload="none"></audio>
+        </div>
+    </main>
+    <footer>
+        Ainsoff &copy; 2023
+    </footer>
+</body>
+
+</html>
